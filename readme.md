@@ -1,4 +1,4 @@
-Playing around with code from Tiddlywiki to see if it can incorporate the popular twitter bootstrap framework.
+Playing around with Tiddlywiki code to see if it can incorporate the popular Twitter Bootstrap framework.
 
 Acknowledgements
 ----------------

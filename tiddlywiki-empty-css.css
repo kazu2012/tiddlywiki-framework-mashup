@@ -1,0 +1,931 @@
+/* empty.html #1 */
+
+#saveTest {
+    display: none;
+}
+#messageArea {
+    display: none;
+}
+#copyright {
+    display: none;
+}
+#storeArea {
+    display: none;
+}
+#storeArea div {
+    border-color: #FFFFFF #666666 #444444 #DDDDDD;
+    border-style: solid;
+    border-width: 2px;
+    margin: 1em 0 0;
+    overflow: auto;
+    padding: 0.5em;
+}
+#shadowArea {
+    display: none;
+}
+#javascriptWarning {
+    background-color: #DD1100;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* empty.html #2 */
+* html .tiddler {
+    height: 1%;
+}
+body {
+    font-family: arial,helvetica;
+    font-size: 0.75em;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    margin-bottom: 0.3em;
+    margin-top: 1.2em;
+    padding-bottom: 1px;
+}
+h4, h5, h6 {
+    margin-top: 1em;
+}
+h1 {
+    font-size: 1.35em;
+}
+h2 {
+    font-size: 1.25em;
+}
+h3 {
+    font-size: 1.1em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.9em;
+}
+hr {
+    height: 1px;
+}
+a {
+    text-decoration: none;
+}
+dt {
+    font-weight: bold;
+}
+ol {
+    list-style-type: decimal;
+}
+ol ol {
+    list-style-type: lower-alpha;
+}
+ol ol ol {
+    list-style-type: lower-roman;
+}
+ol ol ol ol {
+    list-style-type: decimal;
+}
+ol ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+ol ol ol ol ol ol {
+    list-style-type: lower-roman;
+}
+ol ol ol ol ol ol ol {
+    list-style-type: decimal;
+}
+.txtOptionInput {
+    width: 11em;
+}
+#contentWrapper .chkOptionInput {
+    border: 0 none;
+}
+.externalLink {
+    text-decoration: underline;
+}
+.indent {
+    margin-left: 3em;
+}
+.outdent {
+    margin-left: 3em;
+    text-indent: -3em;
+}
+code.escaped {
+    white-space: nowrap;
+}
+.tiddlyLinkExisting {
+    font-weight: bold;
+}
+.tiddlyLinkNonExisting {
+    font-style: italic;
+}
+a.tiddlyLinkNonExisting.shadow {
+    font-weight: bold;
+}
+#mainMenu .tiddlyLinkExisting, #mainMenu .tiddlyLinkNonExisting, #sidebarTabs .tiddlyLinkNonExisting {
+    font-style: normal;
+    font-weight: normal;
+}
+#sidebarTabs .tiddlyLinkExisting {
+    font-style: normal;
+    font-weight: bold;
+}
+.header {
+    position: relative;
+}
+.header a:hover {
+    background: none repeat scroll 0 0 transparent;
+}
+.headerShadow {
+    left: -1px;
+    padding: 4.5em 0 1em 1em;
+    position: relative;
+    top: -1px;
+}
+.headerForeground {
+    left: 0;
+    padding: 4.5em 0 1em 1em;
+    position: absolute;
+    top: 0;
+}
+.siteTitle {
+    font-size: 3em;
+}
+.siteSubtitle {
+    font-size: 1.2em;
+}
+#mainMenu {
+    font-size: 1.1em;
+    left: 0;
+    line-height: 1.6em;
+    padding: 1.5em 0.5em 0.5em;
+    position: absolute;
+    text-align: right;
+    width: 10em;
+}
+#sidebar {
+    font-size: 0.9em;
+    position: absolute;
+    right: 3px;
+    width: 16em;
+}
+#sidebarOptions {
+    padding-top: 0.3em;
+}
+#sidebarOptions a {
+    display: block;
+    margin: 0 0.2em;
+    padding: 0.2em 0.3em;
+}
+#sidebarOptions input {
+    margin: 0.4em 0.5em;
+}
+#sidebarOptions .sliderPanel {
+    font-size: 0.85em;
+    margin-left: 1em;
+    padding: 0.5em;
+}
+#sidebarOptions .sliderPanel a {
+    display: inline;
+    font-weight: bold;
+    padding: 0;
+}
+#sidebarOptions .sliderPanel input {
+    margin: 0 0 0.3em;
+}
+#sidebarTabs .tabContents {
+    overflow: hidden;
+    width: 15em;
+}
+.wizard {
+    padding: 0.1em 1em 0 2em;
+}
+.wizard h1 {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.4em 0 0.2em;
+    padding: 0;
+}
+.wizard h2 {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.4em 0 0.2em;
+    padding: 0;
+}
+.wizardStep {
+    padding: 1em;
+}
+.wizard .button {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+}
+.wizardFooter {
+    padding: 0.8em 0.4em 0.8em 0;
+}
+.wizardFooter .status {
+    margin-left: 1em;
+    padding: 0 0.4em;
+}
+.wizard .button {
+    padding: 0.1em 0.2em;
+}
+#messageArea {
+    margin: 0.5em;
+    padding: 0.5em;
+    position: fixed;
+    right: 0;
+    top: 2em;
+    z-index: 2000;
+}
+.messageToolbar {
+    display: block;
+    padding: 0.2em;
+    text-align: right;
+}
+#messageArea a {
+    text-decoration: underline;
+}
+.tiddlerPopupButton {
+    padding: 0.2em;
+}
+.popupTiddler {
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    z-index: 300;
+}
+.popup {
+    font-size: 0.9em;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 300;
+}
+.popup .popupMessage {
+    padding: 0.4em;
+}
+.popup hr {
+    display: block;
+    height: 1px;
+    margin: 0.2em 0;
+    padding: 0;
+    width: auto;
+}
+.popup li.disabled {
+    padding: 0.4em;
+}
+.popup li a {
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    padding: 0.4em;
+}
+.listBreak {
+    font-size: 1px;
+    line-height: 1px;
+}
+.listBreak div {
+    margin: 2px 0;
+}
+.tabset {
+    padding: 1em 0 0 0.5em;
+}
+.tab {
+    margin: 0 0 0 0.25em;
+    padding: 2px;
+}
+.tabContents {
+    padding: 0.5em;
+}
+.tabContents ul, .tabContents ol {
+    margin: 0;
+    padding: 0;
+}
+.txtMainTab .tabContents li {
+    list-style: none outside none;
+}
+.tabContents li.listLink {
+    margin-left: 0.75em;
+}
+#contentWrapper {
+    display: block;
+}
+#splashScreen {
+    display: none;
+}
+#displayArea {
+    margin: 1em 17em 0 14em;
+}
+.toolbar {
+    font-size: 0.9em;
+    text-align: right;
+}
+.tiddler {
+    padding: 1em 1em 0;
+}
+.missing .viewer, .missing .title {
+    font-style: italic;
+}
+.title {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.missing .subtitle {
+    display: none;
+}
+.subtitle {
+    font-size: 1.1em;
+}
+.tiddler .button {
+    padding: 0.2em 0.4em;
+}
+.tagging {
+    display: none;
+    float: left;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+.isTag .tagging {
+    display: block;
+}
+.tagged {
+    float: right;
+    margin: 0.5em;
+}
+.tagging, .tagged {
+    font-size: 0.9em;
+    padding: 0.25em;
+}
+.tagging ul, .tagged ul {
+    list-style: none outside none;
+    margin: 0.25em;
+    padding: 0;
+}
+.tagClear {
+    clear: both;
+}
+.footer {
+    font-size: 0.9em;
+}
+.footer li {
+    display: inline;
+}
+.annotation {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+* html .viewer pre {
+    padding: 0 0 1em;
+    width: 99%;
+}
+.viewer {
+    line-height: 1.4em;
+    padding-top: 0.5em;
+}
+.viewer .button {
+    margin: 0 0.25em;
+    padding: 0 0.25em;
+}
+.viewer blockquote {
+    line-height: 1.5em;
+    margin-left: 2.5em;
+    padding-left: 0.8em;
+}
+.viewer ul, .viewer ol {
+    margin-left: 0.5em;
+    padding-left: 1.5em;
+}
+.viewer table, table.twtable {
+    border-collapse: collapse;
+    margin: 0.8em 1em;
+}
+.viewer th, .viewer td, .viewer tr, .viewer caption, .twtable th, .twtable td, .twtable tr, .twtable caption {
+    padding: 3px;
+}
+table.listView {
+    font-size: 0.85em;
+    margin: 0.8em 1em;
+}
+table.listView th, table.listView td, table.listView tr {
+    padding: 0 3px;
+}
+.viewer pre {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-left: 0.5em;
+    overflow: auto;
+    padding: 0.5em;
+}
+.viewer code {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+.editor {
+    font-size: 1.1em;
+}
+.editor input, .editor textarea {
+    display: block;
+    font: inherit;
+    width: 100%;
+}
+.editorFooter {
+    font-size: 0.9em;
+    padding: 0.25em 0;
+}
+.editorFooter .button {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.fieldsetFix {
+    border: 0 none;
+    margin: 1px 0;
+    padding: 0;
+}
+.zoomer {
+    font-size: 1.1em;
+    overflow: hidden;
+    position: absolute;
+}
+.zoomer div {
+    padding: 1em;
+}
+* html #backstage {
+    width: 99%;
+}
+* html #backstageArea {
+    width: 99%;
+}
+#backstageArea {
+    display: none;
+    overflow: hidden;
+    padding: 0.3em 0.5em;
+    position: relative;
+    z-index: 150;
+}
+#backstageToolbar {
+    position: relative;
+}
+#backstageArea a {
+    font-weight: bold;
+    margin-left: 0.5em;
+    padding: 0.3em 0.5em;
+}
+#backstageButton {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 175;
+}
+#backstageButton a {
+    margin: 0.1em;
+    padding: 0.1em 0.4em;
+}
+#backstage {
+    position: relative;
+    width: 100%;
+    z-index: 50;
+}
+#backstagePanel {
+    display: none;
+    margin-left: 3em;
+    padding: 1em;
+    position: absolute;
+    width: 90%;
+    z-index: 100;
+}
+.backstagePanelFooter {
+    float: right;
+    padding-top: 0.2em;
+}
+.backstagePanelFooter a {
+    padding: 0.2em 0.4em;
+}
+#backstageCloak {
+    display: none;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+.whenBackstage {
+    display: none;
+}
+.backstageVisible .whenBackstage {
+    display: block;
+}
+
+
+/* empty.html #3 */
+
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+a {
+    color: #0044BB;
+}
+a:hover {
+    background-color: #0044BB;
+    color: #FFFFFF;
+}
+a img {
+    border: 0 none;
+}
+h1, h2, h3, h4, h5, h6 {
+    background: none repeat scroll 0 0 transparent;
+    color: #884411;
+}
+h1 {
+    border-bottom: 2px solid #CCCCCC;
+}
+h2, h3 {
+    border-bottom: 1px solid #CCCCCC;
+}
+.button {
+    border: 1px solid #FFFFFF;
+    color: #001144;
+}
+.button:hover {
+    background: none repeat scroll 0 0 #FFEE88;
+    border-color: #DDBB44;
+    color: #001144;
+}
+.button:active {
+    background: none repeat scroll 0 0 #DDBB44;
+    border: 1px solid #884411;
+    color: #FFFFFF;
+}
+.header {
+    background: none repeat scroll 0 0 #0044BB;
+}
+.headerShadow {
+    color: #000000;
+}
+.headerShadow a {
+    color: #000000;
+    font-weight: normal;
+}
+.headerForeground {
+    color: #FFFFFF;
+}
+.headerForeground a {
+    color: #88CCFF;
+    font-weight: normal;
+}
+.tabSelected {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    color: #001144;
+}
+.tabUnselected {
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
+}
+.tabContents {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    color: #001144;
+}
+.tabContents .button {
+    border: 0 none;
+}
+#sidebar {
+}
+#sidebarOptions input {
+    border: 1px solid #0044BB;
+}
+#sidebarOptions .sliderPanel {
+    background: none repeat scroll 0 0 #88CCFF;
+}
+#sidebarOptions .sliderPanel a {
+    border: medium none;
+    color: #0044BB;
+}
+#sidebarOptions .sliderPanel a:hover {
+    background: none repeat scroll 0 0 #0044BB;
+    color: #FFFFFF;
+}
+#sidebarOptions .sliderPanel a:active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #0044BB;
+}
+.wizard {
+    background: none repeat scroll 0 0 #88CCFF;
+    border: 1px solid #0044BB;
+}
+.wizard h1 {
+    border: medium none;
+    color: #001144;
+}
+.wizard h2 {
+    border: medium none;
+    color: #000000;
+}
+.wizardStep {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #0044BB;
+    color: #000000;
+}
+.wizardStep.wizardStepDone {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.wizardFooter {
+    background: none repeat scroll 0 0 #88CCFF;
+}
+.wizardFooter .status {
+    background: none repeat scroll 0 0 #001144;
+    color: #FFFFFF;
+}
+.wizard .button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFEE88;
+    border-color: #FFFFCC #884411 #884411 #FFFFCC;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+}
+.wizard .button:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+.wizard .button:active {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #000000;
+    border-color: #001144 #88CCFF #88CCFF #001144;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+}
+.wizard .notChanged {
+    background: none repeat scroll 0 0 transparent;
+}
+.wizard .changedLocally {
+    background: none repeat scroll 0 0 #80FF80;
+}
+.wizard .changedServer {
+    background: none repeat scroll 0 0 #8080FF;
+}
+.wizard .changedBoth {
+    background: none repeat scroll 0 0 #FF8080;
+}
+.wizard .notFound {
+    background: none repeat scroll 0 0 #FFFF80;
+}
+.wizard .putToServer {
+    background: none repeat scroll 0 0 #FF80FF;
+}
+.wizard .gotFromServer {
+    background: none repeat scroll 0 0 #80FFFF;
+}
+#messageArea {
+    background: none repeat scroll 0 0 #FFEE88;
+    border: 1px solid #DDBB44;
+    color: #000000;
+}
+#messageArea .button {
+    background: none repeat scroll 0 0 #FFFFCC;
+    border: medium none;
+    color: #0044BB;
+}
+.popupTiddler {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 2px solid #999999;
+}
+.popup {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #999999 #666666 #666666 #999999;
+    border-left: 1px solid #999999;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    color: #666666;
+}
+.popup hr {
+    background: none repeat scroll 0 0 #001144;
+    border-bottom: 1px none;
+    color: #001144;
+}
+.popup li.disabled {
+    color: #999999;
+}
+.popup li a, .popup li a:visited {
+    border: medium none;
+    color: #000000;
+}
+.popup li a:hover {
+    background: none repeat scroll 0 0 #FFEE88;
+    border: medium none;
+    color: #000000;
+}
+.popup li a:active {
+    background: none repeat scroll 0 0 #FFFFCC;
+    border: medium none;
+    color: #000000;
+}
+.popupHighlight {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+.listBreak div {
+    border-bottom: 1px solid #666666;
+}
+.tiddler .defaultCommand {
+    font-weight: bold;
+}
+.shadow .title {
+    color: #666666;
+}
+.title {
+    color: #884411;
+}
+.subtitle {
+    color: #666666;
+}
+.toolbar {
+    color: #0044BB;
+}
+.toolbar a {
+    color: #CCCCCC;
+}
+.selected .toolbar a {
+    color: #999999;
+}
+.selected .toolbar a:hover {
+    color: #000000;
+}
+.tagging, .tagged {
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+.selected .tagging, .selected .tagged {
+    background-color: #CCCCCC;
+    border: 1px solid #999999;
+}
+.tagging .listTitle, .tagged .listTitle {
+    color: #001144;
+}
+.tagging .button, .tagged .button {
+    border: medium none;
+}
+.footer {
+    color: #CCCCCC;
+}
+.selected .footer {
+    color: #999999;
+}
+.error, .errorButton {
+    background: none repeat scroll 0 0 #FF8888;
+    color: #000000;
+}
+.warning {
+    background: none repeat scroll 0 0 #FFFFCC;
+    color: #000000;
+}
+.lowlight {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.zoomer {
+    background: none repeat scroll 0 0 transparent;
+    border: 3px solid #999999;
+    color: #999999;
+}
+.imageLink, #displayArea .imageLink {
+    background: none repeat scroll 0 0 transparent;
+}
+.annotation {
+    background: none repeat scroll 0 0 #FFEE88;
+    border: 2px solid #DDBB44;
+    color: #000000;
+}
+.viewer .listTitle {
+    list-style-type: none;
+    margin-left: -2em;
+}
+.viewer .button {
+    border: 1px solid #DDBB44;
+}
+.viewer blockquote {
+    border-left: 3px solid #666666;
+}
+.viewer table, table.twtable {
+    border: 2px solid #666666;
+}
+.viewer th, .viewer thead td, .twtable th, .twtable thead td {
+    background: none repeat scroll 0 0 #DDBB44;
+    border: 1px solid #666666;
+    color: #FFFFFF;
+}
+.viewer td, .viewer tr, .twtable td, .twtable tr {
+    border: 1px solid #666666;
+}
+.viewer pre {
+    background: none repeat scroll 0 0 #FFFFCC;
+    border: 1px solid #FFEE88;
+}
+.viewer code {
+    color: #884411;
+}
+.viewer hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #666666 -moz-use-text-color -moz-use-text-color;
+    border-right: 0 none;
+    border-style: dashed none none;
+    border-width: 1px 0 0;
+    color: #666666;
+}
+.highlight, .marked {
+    background: none repeat scroll 0 0 #FFEE88;
+}
+.editor input {
+    border: 1px solid #0044BB;
+}
+.editor textarea {
+    border: 1px solid #0044BB;
+    width: 100%;
+}
+.editorFooter {
+    color: #999999;
+}
+.readOnly {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+#backstageArea {
+    background: none repeat scroll 0 0 #000000;
+    color: #999999;
+}
+#backstageArea a {
+    background: none repeat scroll 0 0 #000000;
+    border: medium none;
+    color: #FFFFFF;
+}
+#backstageArea a:hover {
+    background: none repeat scroll 0 0 #FFEE88;
+    color: #000000;
+}
+#backstageArea a.backstageSelTab {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+#backstageButton a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+}
+#backstageButton a:hover {
+    background: none repeat scroll 0 0 #000000;
+    border: medium none;
+    color: #FFFFFF;
+}
+#backstagePanel {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #FFFFFF #666666 #666666;
+}
+.backstagePanelFooter .button {
+    border: medium none;
+    color: #FFFFFF;
+}
+.backstagePanelFooter .button:hover {
+    color: #000000;
+}
+#backstageCloak {
+    background: none repeat scroll 0 0 #000000;
+    opacity: 0.6;
+}
+
+
+/* empty.html #4 */
+
+
+/* empty.html #5 */
+
+
+#mainMenu, #sidebar, #messageArea, .toolbar, #backstageButton, #backstageArea {
+    display: none !important;
+}
+#displayArea {
+    margin: 1em 1em 0;
+}
+noscript {
+    display: none;
+}

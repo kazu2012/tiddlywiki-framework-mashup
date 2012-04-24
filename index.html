@@ -10,243 +10,209 @@
         <meta content=" TiddlyWiki created by Jeremy Ruston, (jeremy [at] osmosoft [dot] com) Copyright (c) Jeremy Ruston 2004-2007 Copyright (c) UnaMesa Association 2007-2011 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list o...O EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. " name="copyright" />
         <link href="index.xml" title="RSS" type="application/rss+xml" rel="alternate" />
         <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen"/>
-        <link rel="stylesheet" href="styles/layout.css" type="text/css" media="screen"/>
-        <link rel="stylesheet" href="styles/area.css" type="text/css" media="screen"/>
+        <!--<link rel="stylesheet" href="styles/layout.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="styles/area.css" type="text/css" media="screen"/>-->
+        <link rel="stylesheet" href="styles/bootstrap.css" type="text/css" media="screen"/>
         <link rel="stylesheet" href="styles/print.css" type="text/css" media="print"/>
-        <title>My TiddlyWiki - a reusable non-linear personal web notebook</title>
+        <title>TiddlyWiki Title</title>
     </head>
-    <body onunload="if(window.unload) unload();" onload="main();">
-        <div id="copyright"> Welcome to TiddlyWiki created by Jeremy Ruston; Copyright &copy; 2004-2007 Jeremy Ruston, Copyright &copy; 2007-2011 UnaMesa Association </div>
-        <noscript> &lt;div id="javascriptWarning"&gt; This page requires JavaScript to function properly.&lt;br /&gt;&lt;br /&gt;If you are using Microsoft Internet Explorer you may need to click on the yellow bar above and select 'Allow Blocked Content'. You must then click 'Yes' on the following security warning. &lt;/div&gt; </noscript>
-        <div id="saveTest">savetest</div>
-        <div id="backstageCloak"></div>
-        <div id="backstageButton" style="display: block;">
-            <a id="backstageShow" class="button" href="javascript:;" title="Open the backstage area to perform authoring and editing tasks" style="display: block;">backstage ↩</a>
-            <a id="backstageHide" class="button" href="javascript:;" title="Close the backstage area" style="display: none;">↪ close</a>
-        </div>
-        <div id="backstageArea" style="display: none;">
-            <div id="backstageToolbar" style="left: 1440px;">
-            backstage:
-                <a class="backstageTab backstageAction" href="javascript:;" title="Save your changes to this TiddlyWiki" task="save">save</a>
-                <a class="backstageTab backstageTask" href="javascript:;" title="Synchronise changes with other TiddlyWiki files and servers" task="sync">sync▾</a>
-                <a class="backstageTab backstageTask" href="javascript:;" title="Import tiddlers and plugins from other TiddlyWiki files and servers" task="importTask">import▾</a>
-                <a class="backstageTab backstageTask" href="javascript:;" title="Tweak the appearance and behaviour of TiddlyWiki" task="tweak">tweak▾</a>
-                <a class="backstageTab backstageTask" href="javascript:;" title="Upgrade TiddlyWiki core code" task="upgrade">upgrade▾</a>
-                <a class="backstageTab backstageTask" href="javascript:;" title="Manage installed plugins" task="plugins">plugins▾</a>
+    <body onunload="if(window.unload) unload();" onload="main();" class="">
+        <noscript> &lt;div id="javascriptWarning"&gt; This page requires JavaScript to function properly.&lt;br /&gt;&lt;br /&gt;If you are using Microsoft Internet Explorer you may need to click on the yellow bar above and select 'Allow Blocked Content'. You must then click 'Yes' on the following security warning. &lt;/div&gt;</noscript>
+         <section id="backstage" class="navbar navbar-fixed-top">
+            <div id="saveTest">savetest</div>
+            <div id="backstageCloak"></div>
+            <div id="backstageButton" style="display: block;" class="navbar-text pull-right">
+                <a id="backstageShow" class="button" href="javascript:;" title="Open the backstage area to perform authoring and editing tasks" style="display: block;">backstage ↩</a>
+                <a id="backstageHide" class="button" href="javascript:;" title="Close the backstage area" style="display: none;">↪ close</a>
             </div>
-        </div>
-        <div id="backstage">
-            <div id="backstagePanel">
-                <div class="backstagePanelFooter"></div>
-                <div class="backstagePanelBody"></div>
-            </div>
-        </div>
-        <div id="contentWrapper">
-            <div class="header" style="position: relative; overflow: hidden; z-index: 0;">
-                <div class="headerShadow">
-                    <span class="siteTitle" tiddler="SiteTitle" refresh="content">My
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>
-                    </span>
-                    <span class="siteSubtitle" tiddler="SiteSubtitle" refresh="content">a reusable non-linear personal web notebook</span>
+            <div id="backstageArea" class="navbar-inner">
+                <div id="backstageToolbar" class="container">
+                <ul class="nav">
+                <li>backstage:</li>
+                    <li><a class="backstageTab backstageAction" href="javascript:;" title="Save your changes to this TiddlyWiki" task="save">save</a></li>
+                    <li><a class="backstageTab backstageTask" href="javascript:;" title="Synchronise changes with other TiddlyWiki files and servers" task="sync">sync▾</a></li>
+                    <li><a class="backstageTab backstageTask" href="javascript:;" title="Import tiddlers and plugins from other TiddlyWiki files and servers" task="importTask">import▾</a></li>
+                    <li><a class="backstageTab backstageTask" href="javascript:;" title="Tweak the appearance and behaviour of TiddlyWiki" task="tweak">tweak▾</a></li>
+                    <li><a class="backstageTab backstageTask" href="javascript:;" title="Upgrade TiddlyWiki core code" task="upgrade">upgrade▾</a></li>
+                    <li><a class="backstageTab backstageTask" href="javascript:;" title="Manage installed plugins" task="plugins">plugins▾</a></li>
+                </ul>
+
                 </div>
-                <div class="headerForeground">
-                    <span class="siteTitle" tiddler="SiteTitle" refresh="content">My
+            <ul id="backstagePanel">
+                <li class="backstagePanelFooter"></li>
+                <li class="backstagePanelBody"></li>
+            </ul>
+        </div>
+        </section>
+        <section id="contentWrapper" class="container-fluid">
+            <header class="header row-fluid">
+                <hgroup class="headerForeground hero-unit">
+                    <h1 class="siteTitle" tiddler="SiteTitle" refresh="content">My
                         <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>
-                    </span>
-                    <span class="siteSubtitle" tiddler="SiteSubtitle" refresh="content">a reusable non-linear personal web notebook</span>
-                </div>
-                <div style="position: absolute; left: 0pt; top: 0%; width: 100%; height: 101%; z-index: -1; background-color: rgb(17, 136, 255);"></div>
-                <div style="position: absolute; left: 0pt; top: 2%; width: 100%; height: 99%; z-index: -1; background-color: rgb(16, 134, 253);"></div>
-                <div style="position: absolute; left: 0pt; top: 4%; width: 100%; height: 97%; z-index: -1; background-color: rgb(16, 133, 252);"></div>
-                <div style="position: absolute; left: 0pt; top: 6%; width: 100%; height: 95%; z-index: -1; background-color: rgb(15, 131, 250);"></div>
-                <div style="position: absolute; left: 0pt; top: 8%; width: 100%; height: 93%; z-index: -1; background-color: rgb(15, 130, 249);"></div>
-                <div style="position: absolute; left: 0pt; top: 10%; width: 100%; height: 91%; z-index: -1; background-color: rgb(15, 129, 248);"></div>
-                <div style="position: absolute; left: 0pt; top: 12%; width: 100%; height: 89%; z-index: -1; background-color: rgb(14, 127, 246);"></div>
-                <div style="position: absolute; left: 0pt; top: 14%; width: 100%; height: 87%; z-index: -1; background-color: rgb(14, 126, 245);"></div>
-                <div style="position: absolute; left: 0pt; top: 16%; width: 100%; height: 85%; z-index: -1; background-color: rgb(14, 125, 244);"></div>
-                <div style="position: absolute; left: 0pt; top: 18%; width: 100%; height: 83%; z-index: -1; background-color: rgb(13, 123, 242);"></div>
-                <div style="position: absolute; left: 0pt; top: 20%; width: 100%; height: 81%; z-index: -1; background-color: rgb(13, 122, 241);"></div>
-                <div style="position: absolute; left: 0pt; top: 22%; width: 100%; height: 79%; z-index: -1; background-color: rgb(13, 121, 240);"></div>
-                <div style="position: absolute; left: 0pt; top: 24%; width: 100%; height: 77%; z-index: -1; background-color: rgb(12, 119, 238);"></div>
-                <div style="position: absolute; left: 0pt; top: 26%; width: 100%; height: 75%; z-index: -1; background-color: rgb(12, 118, 237);"></div>
-                <div style="position: absolute; left: 0pt; top: 28%; width: 100%; height: 73%; z-index: -1; background-color: rgb(12, 116, 235);"></div>
-                <div style="position: absolute; left: 0pt; top: 30%; width: 100%; height: 71%; z-index: -1; background-color: rgb(11, 115, 234);"></div>
-                <div style="position: absolute; left: 0pt; top: 32%; width: 100%; height: 69%; z-index: -1; background-color: rgb(11, 114, 233);"></div>
-                <div style="position: absolute; left: 0pt; top: 34%; width: 100%; height: 67%; z-index: -1; background-color: rgb(11, 112, 231);"></div>
-                <div style="position: absolute; left: 0pt; top: 36%; width: 100%; height: 65%; z-index: -1; background-color: rgb(10, 111, 230);"></div>
-                <div style="position: absolute; left: 0pt; top: 38%; width: 100%; height: 63%; z-index: -1; background-color: rgb(10, 110, 229);"></div>
-                <div style="position: absolute; left: 0pt; top: 40%; width: 100%; height: 61%; z-index: -1; background-color: rgb(10, 108, 227);"></div>
-                <div style="position: absolute; left: 0pt; top: 42%; width: 100%; height: 59%; z-index: -1; background-color: rgb(9, 107, 226);"></div>
-                <div style="position: absolute; left: 0pt; top: 44%; width: 100%; height: 57%; z-index: -1; background-color: rgb(9, 106, 225);"></div>
-                <div style="position: absolute; left: 0pt; top: 46%; width: 100%; height: 55%; z-index: -1; background-color: rgb(9, 104, 223);"></div>
-                <div style="position: absolute; left: 0pt; top: 48%; width: 100%; height: 53%; z-index: -1; background-color: rgb(8, 103, 222);"></div>
-                <div style="position: absolute; left: 0pt; top: 50%; width: 100%; height: 51%; z-index: -1; background-color: rgb(8, 102, 221);"></div>
-                <div style="position: absolute; left: 0pt; top: 52%; width: 100%; height: 49%; z-index: -1; background-color: rgb(8, 100, 219);"></div>
-                <div style="position: absolute; left: 0pt; top: 54%; width: 100%; height: 47%; z-index: -1; background-color: rgb(7, 99, 218);"></div>
-                <div style="position: absolute; left: 0pt; top: 56%; width: 100%; height: 45%; z-index: -1; background-color: rgb(7, 97, 216);"></div>
-                <div style="position: absolute; left: 0pt; top: 58%; width: 100%; height: 43%; z-index: -1; background-color: rgb(7, 96, 215);"></div>
-                <div style="position: absolute; left: 0pt; top: 60%; width: 100%; height: 41%; z-index: -1; background-color: rgb(6, 95, 214);"></div>
-                <div style="position: absolute; left: 0pt; top: 62%; width: 100%; height: 39%; z-index: -1; background-color: rgb(6, 93, 212);"></div>
-                <div style="position: absolute; left: 0pt; top: 64%; width: 100%; height: 37%; z-index: -1; background-color: rgb(6, 92, 211);"></div>
-                <div style="position: absolute; left: 0pt; top: 66%; width: 100%; height: 35%; z-index: -1; background-color: rgb(5, 91, 210);"></div>
-                <div style="position: absolute; left: 0pt; top: 68%; width: 100%; height: 33%; z-index: -1; background-color: rgb(5, 89, 208);"></div>
-                <div style="position: absolute; left: 0pt; top: 70%; width: 100%; height: 31%; z-index: -1; background-color: rgb(5, 88, 207);"></div>
-                <div style="position: absolute; left: 0pt; top: 72%; width: 100%; height: 29%; z-index: -1; background-color: rgb(4, 87, 206);"></div>
-                <div style="position: absolute; left: 0pt; top: 74%; width: 100%; height: 27%; z-index: -1; background-color: rgb(4, 85, 204);"></div>
-                <div style="position: absolute; left: 0pt; top: 76%; width: 100%; height: 25%; z-index: -1; background-color: rgb(4, 84, 203);"></div>
-                <div style="position: absolute; left: 0pt; top: 78%; width: 100%; height: 23%; z-index: -1; background-color: rgb(3, 82, 201);"></div>
-                <div style="position: absolute; left: 0pt; top: 80%; width: 100%; height: 21%; z-index: -1; background-color: rgb(3, 81, 200);"></div>
-                <div style="position: absolute; left: 0pt; top: 82%; width: 100%; height: 19%; z-index: -1; background-color: rgb(3, 80, 199);"></div>
-                <div style="position: absolute; left: 0pt; top: 84%; width: 100%; height: 17%; z-index: -1; background-color: rgb(2, 78, 197);"></div>
-                <div style="position: absolute; left: 0pt; top: 86%; width: 100%; height: 15%; z-index: -1; background-color: rgb(2, 77, 196);"></div>
-                <div style="position: absolute; left: 0pt; top: 88%; width: 100%; height: 13%; z-index: -1; background-color: rgb(2, 76, 195);"></div>
-                <div style="position: absolute; left: 0pt; top: 90%; width: 100%; height: 11%; z-index: -1; background-color: rgb(1, 74, 193);"></div>
-                <div style="position: absolute; left: 0pt; top: 92%; width: 100%; height: 9%; z-index: -1; background-color: rgb(1, 73, 192);"></div>
-                <div style="position: absolute; left: 0pt; top: 94%; width: 100%; height: 7%; z-index: -1; background-color: rgb(1, 72, 191);"></div>
-                <div style="position: absolute; left: 0pt; top: 96%; width: 100%; height: 5%; z-index: -1; background-color: rgb(0, 70, 189);"></div>
-                <div style="position: absolute; left: 0pt; top: 98%; width: 100%; height: 3%; z-index: -1; background-color: rgb(0, 69, 188);"></div>
-                <div style="position: absolute; left: 0pt; top: 100%; width: 100%; height: 1%; z-index: -1; background-color: rgb(0, 68, 187);"></div>
-            </div>
-            <div id="mainMenu" tiddler="MainMenu" refresh="content">
-                <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler provides basic usage instructions" refresh="link" tiddlylink="GettingStarted">GettingStarted</a>
-            </div>
-            <div id="sidebar">
-                <div id="sidebarOptions" tiddler="SideBarOptions" refresh="content">
-                    <a class="searchButton" href="javascript:;" title="Search this TiddlyWiki">search</a>
-                    <input class="txtOptionInput searchField" type="text" size="15" accesskey="F" autocomplete="off" lastsearchtext="" placeholder="">
-                    <a class="button" href="javascript:;" title="Close all displayed tiddlers (except any that are being edited)">close all</a>
-                    <a class="button" href="javascript:;" title="Link to an URL that retrieves all the currently displayed tiddlers">permaview</a>
-                    <a class="button" href="javascript:;" title="Create a new tiddler" accesskey="N" newtitle="New Tiddler" isjournal="false" newfocus="title" newtemplate="2">new tiddler</a>
-                    <a class="button" href="javascript:;" title="Create a new tiddler from the current date and time" accesskey="J" newtitle="DD MMM YYYY" isjournal="true" params="journal" newfocus="text" newtemplate="2">new journal</a>
-                    <a class="button" href="javascript:;" title="Save all tiddlers to create a new TiddlyWiki" accesskey="S">save changes</a>
-                    <a class="button" href="javascript:;" title="Change TiddlyWiki advanced options">options »</a>
-                    <div class="sliderPanel" cookie="chkSliderOptionsPanel" style="display: none;" refresh="content" tiddler="OptionsPanel">
-                        These
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'InterfaceOptions' doesn't yet exist" refresh="link" tiddlylink="InterfaceOptions">InterfaceOptions</a>
-                        for customising
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>
-                        are saved in your browser
-                        <br>
-                        <br>
-                        Your username for signing your edits. Write it as a
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'WikiWord' doesn't yet exist" refresh="link" tiddlylink="WikiWord">WikiWord</a>
-                        (eg
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'JoeBloggs' doesn't yet exist" refresh="link" tiddlylink="JoeBloggs">JoeBloggs</a>
-                        )
-                        <br>
-                        <br>
-                        <input class="txtOptionInput" option="txtUserName" title="Username for signing your edits" />
-                        <br>
-                        <input class="chkOptionInput" type="checkbox" option="chkSaveBackups" title="Keep backup file when saving changes" />
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'SaveBackups' doesn't yet exist" refresh="link" tiddlylink="SaveBackups">SaveBackups</a>
-                        <br>
-                        <input class="chkOptionInput" type="checkbox" option="chkAutoSave" title="Automatically save changes">
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'AutoSave' doesn't yet exist" refresh="link" tiddlylink="AutoSave">AutoSave</a>
-                        <br>
-                        <input class="chkOptionInput" type="checkbox" option="chkRegExpSearch" title="Enable regular expressions for searches" />
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'RegExpSearch' doesn't yet exist" refresh="link" tiddlylink="RegExpSearch">RegExpSearch</a>
-                        <br>
-                        <input class="chkOptionInput" type="checkbox" option="chkCaseSensitiveSearch" title="Case-sensitive searching" />
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'CaseSensitiveSearch' doesn't yet exist" refresh="link" tiddlylink="CaseSensitiveSearch">CaseSensitiveSearch</a>
-                        <br>
-                        <input class="chkOptionInput" type="checkbox" option="chkAnimate" title="Enable animations" />
-                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'EnableAnimations' doesn't yet exist" refresh="link" tiddlylink="EnableAnimations">EnableAnimations</a>
-                        <br>
-                        <br>
-                        <hr>
-                        Also see
-                        <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler provides access to several advanced options" refresh="link" tiddlylink="AdvancedOptions">AdvancedOptions</a>
+                    </h1>
+                    <h2 class="siteSubtitle" tiddler="SiteSubtitle" refresh="content">a reusable non-linear personal web notebook</h2>
+                </hgroup>
+            </header>
+            <div role="main" class="row-fluid">
+             <div class="span3">
+
+                <nav id="mainMenu" tiddler="MainMenu" refresh="content" class="well sidebar-nav">
+                    <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler provides basic usage instructions" refresh="link" tiddlylink="GettingStarted">GettingStarted</a>
+                </nav>
+                <aside id="sidebar" class="well sidebar-nav">
+                    <div id="sidebarOptions" tiddler="SideBarOptions" refresh="content">
+                        <ul>
+                        </ul>
+                        <a class="searchButton btn btn-primary btn-large" href="javascript:;" title="Search this TiddlyWiki">search</a>
+                        <input class="txtOptionInput searchField" type="text" size="15" accesskey="F" autocomplete="off" lastsearchtext="" placeholder="">
+                        <a class="button" href="javascript:;" title="Close all displayed tiddlers (except any that are being edited)">close all</a>
+                        <a class="button" href="javascript:;" title="Link to an URL that retrieves all the currently displayed tiddlers">permaview</a>
+                        <a class="button" href="javascript:;" title="Create a new tiddler" accesskey="N" newtitle="New Tiddler" isjournal="false" newfocus="title" newtemplate="2">new tiddler</a>
+                        <a class="button" href="javascript:;" title="Create a new tiddler from the current date and time" accesskey="J" newtitle="DD MMM YYYY" isjournal="true" params="journal" newfocus="text" newtemplate="2">new journal</a>
+                        <a class="button" href="javascript:;" title="Save all tiddlers to create a new TiddlyWiki" accesskey="S">save changes</a>
+                        <a class="button" href="javascript:;" title="Change TiddlyWiki advanced options">options »</a>
+                        <ul class="sliderPanel" cookie="chkSliderOptionsPanel" style="display: none;" refresh="content" tiddler="OptionsPanel" class="nav-list">
+                            <li>
+                                <p>These <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'InterfaceOptions' doesn't yet exist" refresh="link" tiddlylink="InterfaceOptions">InterfaceOptions</a> for customising <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>are saved in your browser</p>
+                            </li>
+                            <li>
+                                <p>Your username for signing your edits. Write it as a <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'WikiWord' doesn't yet exist" refresh="link" tiddlylink="WikiWord">WikiWord</a> (eg <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'JoeBloggs' doesn't yet exist" refresh="link" tiddlylink="JoeBloggs">JoeBloggs</a>)</p>
+                            </li>
+                            <li>
+                                <input class="txtOptionInput" option="txtUserName" title="Username for signing your edits" />
+                            </li>
+                            <li>
+                                <input class="chkOptionInput" type="checkbox" option="chkSaveBackups" title="Keep backup file when saving changes" />
+                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'SaveBackups' doesn't yet exist" refresh="link" tiddlylink="SaveBackups">SaveBackups</a>
+                            </li>
+                            <li>
+                                <input class="chkOptionInput" type="checkbox" option="chkAutoSave" title="Automatically save changes">
+                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'AutoSave' doesn't yet exist" refresh="link" tiddlylink="AutoSave">AutoSave</a>
+                            </li>
+                            <li>
+                                <input class="chkOptionInput" type="checkbox" option="chkRegExpSearch" title="Enable regular expressions for searches" />
+                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'RegExpSearch' doesn't yet exist" refresh="link" tiddlylink="RegExpSearch">RegExpSearch</a>
+                            </li>
+                            <li>
+                                <input class="chkOptionInput" type="checkbox" option="chkCaseSensitiveSearch" title="Case-sensitive searching" />
+                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'CaseSensitiveSearch' doesn't yet exist" refresh="link" tiddlylink="CaseSensitiveSearch">CaseSensitiveSearch</a>
+                            </li>
+                            <li>
+                                <input class="chkOptionInput" type="checkbox" option="chkAnimate" title="Enable animations" />
+                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'EnableAnimations' doesn't yet exist" refresh="link" tiddlylink="EnableAnimations">EnableAnimations</a>
+                            </li>
+                            <li>
+                                <p>Also see<a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler provides access to several advanced options" refresh="link" tiddlylink="AdvancedOptions">AdvancedOptions</a></p>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div id="sidebarTabs" tiddler="SideBarTabs" force="true" refresh="content">
-                    <div class="tabsetWrapper txtMainTab">
-                        <div class="tabset" cookie="txtMainTab">
-                            <a class="tab tabSelected" href="javascript:;" title="Timeline" tab="Timeline" content="TabTimeline">Timeline
-                                <span style="font-size:0pt;line-height:0px"></span>
-                            </a>
-                            <a class="tab tabUnselected" href="javascript:;" title="All tiddlers" tab="All" content="TabAll">All
-                               <span style="font-size:0pt;line-height:0px"></span>
-                            </a>
-                            <a class="tab tabUnselected" href="javascript:;" title="All tags" tab="Tags" content="TabTags">Tags
-                                <span style="font-size:0pt;line-height:0px"></span>
-                            </a>
-                            <a class="tab tabUnselected" href="javascript:;" title="More lists" tab="More" content="TabMore">More
-                                <span style="font-size:0pt;line-height:0px"></span>
-                            </a>
-                        </div>
-                        <div class="tabContents">
-                            <div params="" macroname="timeline" refresh="macro"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="displayArea">
-                <div id="messageArea"></div>
-                <div id="tiddlerDisplay">
-                    <div id="tiddlerGettingStarted" class="tiddler shadow" refresh="tiddler" tags="" tiddler="GettingStarted" template="ViewTemplate">
-                        <div class="toolbar">
-                            <a class="button command_closeTiddler" href="javascript:;" title="Close this tiddler" commandname="closeTiddler" tiddler="GettingStarted">close</a>
-                            <a class="button command_closeOthers" href="javascript:;" title="Close all other tiddlers" commandname="closeOthers" tiddler="GettingStarted">close others</a>
-                            <a class="button command_editTiddler defaultCommand" href="javascript:;" title="Edit this tiddler" commandname="editTiddler" tiddler="GettingStarted">edit</a>
-                            <a class="button moreCommand" href="javascript:;" title="Show additional commands">more</a>
-                            <span class="moreCommand" style="display: none;">
-                                <a class="button command_fields" href="javascript:;" title="Show the extended fields of this tiddler" commandname="fields" tiddler="GettingStarted">fields</a>
-                                <a class="button command_syncing" href="javascript:;" title="Control synchronisation of this tiddler with a server or external file" commandname="syncing" tiddler="GettingStarted">syncing</a>
-                                <a class="button command_permalink" href="javascript:;" title="Permalink for this tiddler" commandname="permalink" tiddler="GettingStarted">permalink</a>
-                                <a class="button command_references" href="javascript:;" title="Show tiddlers that link to this one" commandname="references" tiddler="GettingStarted">references</a>
-                                <a class="button command_jump" href="javascript:;" title="Jump to another open tiddler" commandname="jump" tiddler="GettingStarted">jump</a>
-                            </span>
-                        </div>
-                        <div class="title">GettingStarted</div>
-                        <div class="subtitle">
-                            <span>
-                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler '(built-in shadow tiddler)' doesn't yet exist" refresh="link" tiddlylink="(built-in shadow tiddler)">(built-in shadow tiddler)</a>
-                            </span>,
-                            <span>6 October 2011</span>(<span>created</span><span>6 October 2011</span>)
-                        </div>
-                        <div class="tagging">
-                            <ul title="List of tiddlers tagged with 'GettingStarted'">
-                                <li class="listTitle">not tagging</li>
-                            </ul>
-                        </div>
-                        <div class="tagged">
-                            <ul>
-                                <li class="listTitle">no tags</li>
-                            </ul>
-                        </div>
-                        <div class="viewer">
-                            To get started with this blank
-                            <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>
-                            , you'll need to modify the following tiddlers:
-                            <br>
-                            <ul>
+                    <div id="sidebarTabs" tiddler="SideBarTabs" force="true" refresh="content" class="tabsetWrapper txtMainTab">
+                            <ul class="tabset" cookie="txtMainTab">
                                 <li>
-                                    <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler is used as the first part of the page title" refresh="link" tiddlylink="SiteTitle">SiteTitle</a>
-                                    &amp;
-                                    <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler is used as the second part of the page title" refresh="link" tiddlylink="SiteSubtitle">SiteSubtitle</a>
-                                    : The title and subtitle of the site, as shown above (after saving, they will also appear in the browser title bar)
+                                <a class="tab tabSelected" href="javascript:;" title="Timeline" tab="Timeline" content="TabTimeline">Timeline
+                                    <span style="font-size:0pt;line-height:0px"></span>
+                                </a>
                                 </li>
                                 <li>
-                                    <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler is used as the contents of the main menu in the left-hand column of the screen" refresh="link" tiddlylink="MainMenu">MainMenu</a>
-                                    : The menu (usually on the left)
-                                </li>
-                                <li>
-                                    <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="The tiddlers listed in this shadow tiddler will be automatically displayed when ~TiddlyWiki starts up" refresh="link" tiddlylink="DefaultTiddlers">DefaultTiddlers</a>
-                                    : Contains the names of the tiddlers that you want to appear when the
-                                    <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>is opened
-                                </li>
+                                <a class="tab tabUnselected" href="javascript:;" title="All tiddlers" tab="All" content="TabAll">All
+                                   <span style="font-size:0pt;line-height:0px"></span>
+                                </a>
+                                 </li>
+                                 <li>
+
+                                <a class="tab tabUnselected" href="javascript:;" title="All tags" tab="Tags" content="TabTags">Tags
+                                    <span style="font-size:0pt;line-height:0px"></span>
+                                </a>
+                                 </li>
+                                 <li>
+
+                                <a class="tab tabUnselected" href="javascript:;" title="More lists" tab="More" content="TabMore">More
+                                    <span style="font-size:0pt;line-height:0px"></span>
+                                </a>
+                            </li>
                             </ul>
-                            You'll also need to enter your username for signing your edits:
-                            <input class="txtOptionInput" option="txtUserName" title="Username for signing your edits" />
-                        </div>
-                        <div class="tagClear"></div>
+                            <div class="tabContents"  params="" macroname="timeline" refresh="macro">
+                            </div>
                     </div>
-                </div>
+                </aside>
+                 </div>
+                <section id="displayArea" class="span9">
+                    <div id="messageArea"></div>
+                     <div id="tiddlerDisplay">
+                        <article id="tiddlerGettingStarted" class="tiddler shadow" refresh="tiddler" tags="" tiddler="GettingStarted" template="ViewTemplate">
+                            <div class="toolbar subnav">
+                            <ul class="nav nav-pills">
+                                <li><a class="button command_closeTiddler" href="javascript:;" title="Close this tiddler" commandname="closeTiddler" tiddler="GettingStarted">close</a></li>
+                                <li><a class="button command_closeOthers " href="javascript:;" title="Close all other tiddlers" commandname="closeOthers" tiddler="GettingStarted">close others</a></li>
+                                <li><a class="button command_editTiddler defaultCommand" href="javascript:;" title="Edit this tiddler" commandname="editTiddler" tiddler="GettingStarted">edit</a></li>
+                                <li><a class="button moreCommand" href="javascript:;" title="Show additional commands">more</a></li>
+                                <!-- <span class="moreCommand" style="display: none;"> -->
+                                    <li><a class="button command_fields" href="javascript:;" title="Show the extended fields of this tiddler" commandname="fields" tiddler="GettingStarted">fields</a></li>
+                                    <li><a class="button command_syncing" href="javascript:;" title="Control synchronisation of this tiddler with a server or external file" commandname="syncing" tiddler="GettingStarted">syncing</a></li>
+                                    <li><a class="button command_permalink" href="javascript:;" title="Permalink for this tiddler" commandname="permalink" tiddler="GettingStarted">permalink</a></li>
+                                    <li><a class="button command_references" href="javascript:;" title="Show tiddlers that link to this one" commandname="references" tiddler="GettingStarted">references</a></li>
+                                    <li><a class="button command_jump" href="javascript:;" title="Jump to another open tiddler" commandname="jump" tiddler="GettingStarted">jump</a></li>
+                                <!-- </span> -->
+                            </ul>
+                            </div>
+                            <hgroup>
+                                <h2 class="title">GettingStarted</h2>
+                                <h3 class="subtitle">
+                                    <span>
+                                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler '(built-in shadow tiddler)' doesn't yet exist" refresh="link" tiddlylink="(built-in shadow tiddler)">(built-in shadow tiddler)</a>
+                                    </span>,
+                                    <span>6 October 2011</span>(<span>created</span><span>6 October 2011</span>)
+                                </h3>
+                            </hgroup>
+
+                            <div class="tagging">
+                                <ul title="List of tiddlers tagged with 'GettingStarted'">
+                                    <li class="listTitle">not tagging</li>
+                                </ul>
+                            </div>
+                            <div class="tagged">
+                                <ul>
+                                    <li class="listTitle">no tags</li>
+                                </ul>
+                            </div>
+                            <div class="viewer">
+                                To get started with this blank
+                                <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>
+                                , you'll need to modify the following tiddlers:
+                                <br>
+                                <ul>
+                                    <li>
+                                        <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler is used as the first part of the page title" refresh="link" tiddlylink="SiteTitle">SiteTitle</a>
+                                        &amp;
+                                        <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler is used as the second part of the page title" refresh="link" tiddlylink="SiteSubtitle">SiteSubtitle</a>
+                                        : The title and subtitle of the site, as shown above (after saving, they will also appear in the browser title bar)
+                                    </li>
+                                    <li>
+                                        <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="This shadow tiddler is used as the contents of the main menu in the left-hand column of the screen" refresh="link" tiddlylink="MainMenu">MainMenu</a>
+                                        : The menu (usually on the left)
+                                    </li>
+                                    <li>
+                                        <a class="tiddlyLink tiddlyLinkNonExisting shadow" href="javascript:;" title="The tiddlers listed in this shadow tiddler will be automatically displayed when ~TiddlyWiki starts up" refresh="link" tiddlylink="DefaultTiddlers">DefaultTiddlers</a>
+                                        : Contains the names of the tiddlers that you want to appear when the
+                                        <a class="tiddlyLink tiddlyLinkNonExisting" href="javascript:;" title="The tiddler 'TiddlyWiki' doesn't yet exist" refresh="link" tiddlylink="TiddlyWiki">TiddlyWiki</a>is opened
+                                    </li>
+                                </ul>
+                                You'll also need to enter your username for signing your edits:
+                                <input class="txtOptionInput" option="txtUserName" title="Username for signing your edits" />
+                            </div>
+                            <div class="tagClear"></div>
+                        </article>
+                    </div>
+                </section>           
             </div>
-        </div>
-        <div id="contentStash"></div>
-        <div id="shadowArea"></div>
-        <div id="storeArea"> </div>
+            <footer class="row-fluid">
+                <small id="copyright">Welcome to TiddlyWiki created by Jeremy Ruston; Copyright &copy; 2004-2007 Jeremy Ruston, Copyright &copy; 2007-2011 UnaMesa Association
+                </small>
+            </footer>
+        </section>
+        <section id="contentStash"></section>
+        <section id="shadowArea"></section>
+        <section id="storeArea"> </section>
         <script id="jsArea" type="text/javascript" />
         <script id="jsdeprecatedArea" type="text/javascript" />
         <script id="jslibArea" type="text/javascript" />
